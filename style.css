@@ -3,3 +3,100 @@ body, html {
     padding: 0;
 }
 
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+ul,
+.about-us,
+.what-we-do-section {
+    width: 900px;
+}
+
+nav {
+    background-color: #33292a;
+    color: #fff;
+    font-size: 20px;
+}
+
+ul {
+    margin: 0 auto; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    height: 100px;
+    padding: 0;
+}
+
+
+a {
+    color: #fff;
+    text-decoration: none;
+}
+
+
+img {
+    width: 100vw;
+    height: calc(100vh - 100px);
+}
+
+
+.header_picture h1 {
+    text-align: right;
+    font-size: 64px;
+    position: absolute;
+    right:300px;
+    bottom: 110px;
+    color: white;
+}
+
+.about-us {
+    margin: 100px auto; 
+    display: flex;
+    justify-content: space-between;
+}
+
+.about-us .about-us-text, .about-us img {
+    height: 300px;
+    width: 440px;
+}
+
+.about-us h1 {
+    margin: 0;
+}
+
+.about-us img {
+    height: 300px;
+}
+
+
+.what-we-do {
+    background-color: #33292a;
+}
+
+.what-we-do-section {
+    margin: 0px auto;
+    padding: 100px;
+    color: white;
+    text-align: center; 
+}
+
+.what-we-do-activities {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 100px;
+}
+
+.what-we-do-section img {
+    height: 100px; 
+    width: 100px;
+}
+
+.what-we-do-activity {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-size: 32px;
+}
