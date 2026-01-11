@@ -9,14 +9,20 @@ body {
 
 ul,
 .about-us,
-.what-we-do-section {
+.what-we-do-section,
+.our-trips,
+.travel-info-section,
+.reviews {
     width: 900px;
+    margin: 0 auto;
 }
+
+/* header */
 
 nav {
     background-color: #33292a;
     color: #fff;
-    font-size: 20px;
+    font-size: 18px;
 }
 
 ul {
@@ -51,6 +57,8 @@ img {
     color: white;
 }
 
+/* about us part */
+
 .about-us {
     margin: 100px auto; 
     display: flex;
@@ -59,7 +67,7 @@ img {
 
 .about-us .about-us-text, .about-us img {
     height: 300px;
-    width: 440px;
+    width: 420px;
 }
 
 .about-us h1 {
@@ -70,6 +78,8 @@ img {
     height: 300px;
 }
 
+
+/* what we do part */
 
 .what-we-do {
     background-color: #33292a;
@@ -89,14 +99,178 @@ img {
     margin-top: 100px;
 }
 
+
 .what-we-do-section img {
-    height: 100px; 
-    width: 100px;
+    height: 80px; 
+    width: 80px;
 }
 
 .what-we-do-activity {
     display: flex;
     flex-direction: column;
     gap: 10px;
-    font-size: 32px;
+
+}
+
+.activities {
+    font-size: 22px;
+    font-weight: 600;
+}
+
+p {
+    font-weight: 100;
+}
+
+/* our trips part */
+
+.our-trips {
+    margin: 100px auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 300px);
+    grid-gap: 15px;
+    margin-bottom: 100px;
+}
+
+
+.our-trips img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.center-text {
+    display: flex;
+    background-color: aliceblue;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+}
+
+
+/* travel info part */
+
+.travel-info {
+    background-color: #644b4f;
+    color: #fff;
+}
+
+.travel-info-section {
+    padding-top: 80px;
+    padding-bottom: 80px;
+    display: flex;
+    justify-content: space-between;
+    gap: 60px;
+}
+
+.travel-info-section h1,
+.travel-info-section-text {
+    flex-basis: 0;
+}
+
+.travel-info-section h1 {
+    flex-grow: 1;
+    font-size: 28px;
+}
+
+
+.travel-info-section-text { 
+    flex-grow: 3;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+} 
+
+.travel-info-section-text a {
+    color: black;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    font-weight: 600;
+    padding: 13px 20px;
+    margin-top: 20px;
+    background-color: #fff;
+    text-decoration: none;
+}
+
+
+/* reviews part */
+
+.reviews-info {
+    text-align: center;
+    width: 340px;
+
+}
+
+.reviews {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.reviews-customers {
+    display: flex;
+    align-items: center;
+    gap: 150px;
+}
+
+.reviews-customer-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    width: 350px;
+    text-align: center;
+}
+
+.reviews-customer-info span {
+    font-weight: 600;
+}
+
+.avatar {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.avatar img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+
+/* pictures part */
+
+.pictures {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 450px);
+}
+
+.pictures img {
+    width: 100%;
+    height: 100%;
+}
+
+
+/* footer part */
+
+footer {
+    background-color: #33292a;
+    color: #fff;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    font-size: 0.7rem;
+}
+
+footer a {
+    color: red;
+    text-decoration: underline;
+    font-weight: 600;
 }
